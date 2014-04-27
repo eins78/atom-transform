@@ -1,10 +1,13 @@
 {
   "name": "transform",
   "main": "./lib/transform",
-  "version": "0.0.0",
-  "description": "A short description of your package",
-  "activationEvents": ["transform:toggle"],
-  "repository": "https://github.com/atom/transform",
+  "version": "0.0.1",
+  "author": "eins78 <1@178.is>",
+  "description": "Transform (selected) text in atom editor.",
+  "activationEvents": [
+    "transform:capitalize"
+  ],
+  "repository": "https://github.com/eins78/atom-transform",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

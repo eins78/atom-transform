@@ -1,16 +1,12 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
-'context-menu':
-  '.overlayer':
-      'Enable transform': 'transform:toggle'
-
 'menu': [
   {
-    'label': 'Packages'
+    'label': 'Edit'
     'submenu': [
-      'label': 'transform'
+      'label': 'Text'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'transform:toggle' }
-      ]
+        'label': 'Capitalize'
+        'command': 'transform:capitalize']
     ]
   }
 ]
