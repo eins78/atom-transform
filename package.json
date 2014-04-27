@@ -1,7 +1,7 @@
 {
   "name": "transform",
   "main": "./lib/transform",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "eins78 <1@178.is>",
   "description": "Transform (selected) text in atom editor.",
   "activationEvents": [
