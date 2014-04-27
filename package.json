@@ -5,7 +5,21 @@
   "author": "eins78 <1@178.is>",
   "description": "Transform (selected) text in atom editor.",
   "activationEvents": [
-    "transform:capitalize"
+    "transform:clean",
+    "transform:trim",
+    "transform:swapCase",
+    "transform:capitalize",
+    "transform:titleize",
+    "transform:camelize",
+    "transform:classify",
+    "transform:underscored",
+    "transform:dasherize",
+    "transform:humanize",
+    "transform:slugify",
+    "transform:stripTags",
+    "transform:escapeHTML",
+    "transform:unescapeHTML",
+    "transform:countCharacters"
   ],
   "repository": "https://github.com/eins78/atom-transform",
   "license": "MIT",

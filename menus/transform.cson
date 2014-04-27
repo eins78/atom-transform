@@ -5,11 +5,67 @@
     'submenu': [
       'label': 'Transform'
       'submenu': [
-        'label': 'String'
-        'submenu': [
-          'label': 'Capitalize'
-          'command': 'transform:capitalize'
-        ]
+        {
+          'label': 'clean',
+          'command': 'clean'
+        },
+        {
+          'label': 'trim',
+          'command': 'trim'
+        },
+        {
+          'label': 'swapCase',
+          'command': 'swapCase'
+        },
+        {
+          'label': 'capitalize',
+          'command': 'capitalize'
+        },
+        {
+          'label': 'titleize',
+          'command': 'titleize'
+        },
+        {
+          'label': 'camelize',
+          'command': 'camelize'
+        },
+        {
+          'label': 'classify',
+          'command': 'classify'
+        },
+        {
+          'label': 'underscored',
+          'command': 'underscored'
+        },
+        {
+          'label': 'dasherize',
+          'command': 'dasherize'
+        },
+        {
+          'label': 'humanize',
+          'command': 'humanize'
+        },
+        {
+          'label': 'slugify',
+          'command': 'slugify'
+        },
+        {
+          'label': 'stripTags',
+          'command': 'stripTags'
+        },
+        {
+          'label': 'escapeHTML',
+          'command': 'escapeHTML'
+        },
+        {
+          'label': 'unescapeHTML',
+          'command': 'unescapeHTML'
+        },
+        {
+          'label': 'countCharacters',
+          'command': 'countCharacters'
+        },
+
       ]
     ]
   }

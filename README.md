@@ -1,9 +1,8 @@
 # transform [WIP]
 
-Transform (selected) text in atom editor.
+> Transform (selected) text in atom editor.
 
-Right now only a proof of concept adding a 'Capitalize' command, 
-the idea is to have a collection of usefull snippets…
+A collection of usefull text transformations.
 
 The inspiration for this package comes comes from several TextMate
 packages. The small helpers like `HTML > URI-Encode` are the only
@@ -17,18 +16,33 @@ might need to URI-encode a small snippet of text outside of a
 - adds commands to apply [transformations][#transformations] to the selected text
 - works with multiple selections (like the built-in `Edit > Text` Commands)
 
-## Transformations
+## Included Transformations
 
-### Captitalize
+The following string methods from [`underscore.string`](https://github.com/epeli/underscore.string)
+are included as commands:
 
-Makes the first letter uppercase.
+- **`capitalize`**
+- **`clean`**
+- **`trim`**
+- **`swapCase`**
+- **`capitalize`**
+- **`titleize`**
+- **`camelize`**
+- **`classify`**
+- **`underscored`**
+- **`dasherize`**
+- **`humanize`**
+- **`slugify`**
+- **`stripTags`**
+- **`escapeHTML`**
+- **`unescapeHTML`**
+- **`countCharacter`**
 
-*Example:* `foo` **=>** `Foo`
 
 ## Open Questions
 
 I am currently thinking about these topics 
-and would appreciate input from the community.
+and would appreciate input from the community: 
 
 - how to organize the different commands internally
 - how to organize different command (groups) wrt menus, etc?
