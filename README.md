@@ -1,4 +1,4 @@
-# transform [WIP]
+# transform [alpha, WIP]
 
 > Transform (selected) text in atom editor.
 
@@ -21,22 +21,24 @@ might need to URI-encode a small snippet of text outside of a
 The following string methods from [`underscore.string`](https://github.com/epeli/underscore.string)
 are included as commands:
 
-- **`capitalize`**
-- **`clean`**
-- **`trim`**
-- **`swapCase`**
-- **`capitalize`**
-- **`titleize`**
-- **`camelize`**
-- **`classify`**
-- **`underscored`**
-- **`dasherize`**
-- **`humanize`**
-- **`slugify`**
-- **`stripTags`**
-- **`escapeHTML`**
-- **`unescapeHTML`**
-- **`countCharacter`**
+- **clean**: (no more than 1 whitespace)
+- **trim**: (remove whitespace around)
+- **swapCase**: `Lorem Ipsum` => `lOREM iPSUM`
+- **capitalize**: `lorem ipsum` => `Lorem ipsum`
+- **titleize**: `lorem ipsum` => `Lorem Ipsum`
+- **camelize**: `lorem ipsum factory_bean` => `loremIpsumFactoryBean`
+- **underscored**: `Lorem Ipsum` => `lorem_ipsum`
+- **dasherize**: `Lorem Ipsum` => `Lorem Ipsum`
+- **humanize**: `loremIpsum_FactoryBean` => `Lorem ipsum factory bean`
+- **classify**: `Lor.em Ip sum` => `LorEmIpSum`
+- **slugify**: `Lo!rem/ Ip = sum` => `lorem-ip-sum`
+- **stripTags**: `Lorem <br>Ipsum` => `Lorem Ipsum`
+- **escapeHTML**: `<b>Lorem Ipsum</b>` => `&lt;b&gt;Lorem Ipsum&lt;/b&gt;`
+- **unescapeHTML**: `&lt;b&gt;Lorem Ipsum&lt;/b&gt;` => `<b>Lorem Ipsum</b>`
+
+## TODO
+
+- make sure that the replaced text is properly selected (not the old range)
 
 
 ## Open Questions
