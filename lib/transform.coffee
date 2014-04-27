@@ -26,8 +26,6 @@ module.exports =
 
   # this is run on (lazy) activation
   activate: ->
-
-    console.log transformations
     
     # - attaches functions to commands
     for own cmd of transformations
