@@ -1,12 +1,16 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'menu': [
   {
-    'label': 'Edit'
+    'label': 'Packages'
     'submenu': [
-      'label': 'Text'
+      'label': 'Transform'
       'submenu': [
-        'label': 'Capitalize'
-        'command': 'transform:capitalize']
+        'label': 'String'
+        'submenu': [
+          'label': 'Capitalize'
+          'command': 'transform:capitalize'
+        ]
+      ]
     ]
   }
 ]
