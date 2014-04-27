@@ -7,7 +7,7 @@ the idea is to have a collection of usefull snippets…
 
 The inspiration for this package comes comes from several TextMate
 packages. The small helpers like `HTML > URI-Encode` are the only
-thing I really miss, however I think the "transformations" of the
+thing I really miss, however I think these "transformations" of the
 current selection are better bundled together. For example, one
 might need to URI-encode a small snippet of text outside of a
 `.html` file.

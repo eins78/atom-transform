@@ -13,6 +13,7 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
-    "URIjs": "~1.13.1"
+    "URIjs": "~1.13.1",
+    "underscore.string": "~2.3.3"
   }
 }
