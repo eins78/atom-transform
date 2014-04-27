@@ -36,6 +36,11 @@ are included as commands:
 - **escapeHTML**: `<b>Lorem Ipsum</b>` => `&lt;b&gt;Lorem Ipsum&lt;/b&gt;`
 - **unescapeHTML**: `&lt;b&gt;Lorem Ipsum&lt;/b&gt;` => `<b>Lorem Ipsum</b>`
 
+Some additional built-ins:
+
+- **double**: `Lorem` => `LoremLorem`
+
+
 ## TODO
 
 - make sure that the replaced text is properly selected (not the old range)

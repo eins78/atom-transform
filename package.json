@@ -19,7 +19,8 @@
     "transform:stripTags",
     "transform:escapeHTML",
     "transform:unescapeHTML",
-    "transform:countCharacters"
+    "transform:countCharacters",
+    "transform:double"
   ],
   "repository": "https://github.com/eins78/atom-transform",
   "license": "MIT",

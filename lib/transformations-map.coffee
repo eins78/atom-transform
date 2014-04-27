@@ -32,5 +32,7 @@ module.exports =
     uString.escapeHTML(this)
   'unescapeHTML': ->
     uString.unescapeHTML(this)
-  'countCharacters': ->
-    uString.count(this)
+    
+  # some home-made
+  'double': ->
+    this+this

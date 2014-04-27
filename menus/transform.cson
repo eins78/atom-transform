@@ -65,7 +65,10 @@
           'label': 'countCharacters',
           'command': 'countCharacters'
         },
-
+        {
+          'label': 'double',
+          'command': 'double'
+        }
       ]
     ]
   }
