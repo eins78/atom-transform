@@ -38,6 +38,11 @@ are included as commands:
 - **escapeHTML**: `<b>Lorem Ipsum</b>` => `&lt;b&gt;Lorem Ipsum&lt;/b&gt;`
 - **unescapeHTML**: `&lt;b&gt;Lorem Ipsum&lt;/b&gt;` => `<b>Lorem Ipsum</b>`
 
+The following URI methods are also available (via [`URIjs`](https://github.com/medialize/URI.js)):
+
+- **encodeURI**: `!Lorem&Ipsum!` => `%21Lorem%26Ipsum%21`
+- **decodeURI**: `Lorem%20%26%20Ipsum%20%5E%5E` => `Lorem & Ipsum ^^`
+
 Some additional built-ins:
 
 - **double**: `Lorem` => `LoremLorem`

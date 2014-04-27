@@ -1,4 +1,5 @@
 uString = require 'underscore.string'
+URI = require "URIjs"
 
 # maps command names to actual function used
 module.exports = 
@@ -33,6 +34,12 @@ module.exports =
   'unescapeHTML': ->
     uString.unescapeHTML(this)
     
-  # some home-made
+  # some from [`URIjs`](https://github.com/medialize/URI.js)
+  'encodeURI': ->
+    URI.encode(this)
+  'decodeURI': ->
+    URI.decode(this)
+    
+  # and some home-made
   'double': ->
     this+this

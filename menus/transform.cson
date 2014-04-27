@@ -66,6 +66,14 @@
           'command': 'countCharacters'
         },
         {
+          'label': 'encodeURI',
+          'command': 'encodeURI'
+        },
+        {
+          'label': 'decodeURI',
+          'command': 'decodeURI'
+        },
+        {
           'label': 'double',
           'command': 'double'
         }

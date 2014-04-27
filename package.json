@@ -20,6 +20,8 @@
     "transform:escapeHTML",
     "transform:unescapeHTML",
     "transform:countCharacters",
+    "transform:encodeURI",
+    "transform:decodeURI",
     "transform:double"
   ],
   "repository": "https://github.com/eins78/atom-transform",
