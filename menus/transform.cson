@@ -6,75 +6,75 @@
       'label': 'Transform'
       'submenu': [
         {
-          'label': 'clean',
+          'label': 'Clean',
           'command': 'clean'
         },
         {
-          'label': 'trim',
+          'label': 'Trim',
           'command': 'trim'
         },
         {
-          'label': 'swapCase',
+          'label': 'SwapCase',
           'command': 'swapCase'
         },
         {
-          'label': 'capitalize',
+          'label': 'Capitalize',
           'command': 'capitalize'
         },
         {
-          'label': 'titleize',
+          'label': 'Titleize',
           'command': 'titleize'
         },
         {
-          'label': 'camelize',
+          'label': 'Camelize',
           'command': 'camelize'
         },
         {
-          'label': 'classify',
+          'label': 'Classify',
           'command': 'classify'
         },
         {
-          'label': 'underscored',
+          'label': 'Underscored',
           'command': 'underscored'
         },
         {
-          'label': 'dasherize',
+          'label': 'Dasherize',
           'command': 'dasherize'
         },
         {
-          'label': 'humanize',
+          'label': 'Humanize',
           'command': 'humanize'
         },
         {
-          'label': 'slugify',
+          'label': 'Slugify',
           'command': 'slugify'
         },
         {
-          'label': 'stripTags',
+          'label': 'StripTags',
           'command': 'stripTags'
         },
         {
-          'label': 'escapeHTML',
+          'label': 'EscapeHTML',
           'command': 'escapeHTML'
         },
         {
-          'label': 'unescapeHTML',
+          'label': 'UnescapeHTML',
           'command': 'unescapeHTML'
         },
         {
-          'label': 'countCharacters',
+          'label': 'CountCharacters',
           'command': 'countCharacters'
         },
         {
-          'label': 'encodeURI',
+          'label': 'EncodeURI',
           'command': 'encodeURI'
         },
         {
-          'label': 'decodeURI',
+          'label': 'DecodeURI',
           'command': 'decodeURI'
         },
         {
-          'label': 'double',
+          'label': 'Double',
           'command': 'double'
         }
       ]
