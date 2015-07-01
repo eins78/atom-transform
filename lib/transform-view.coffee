@@ -7,7 +7,7 @@ class TransformView extends View
       @div "The Transform package is Alive! It's ALIVE!", class: "message"
 
   initialize: (serializeState) ->
-    atom.workspaceView.command "transform:toggle", => @toggle()
+    atom.commands.add "atom-text-editor", "transform:toggle", => @toggle()
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
@@ -21,4 +21,5 @@ class TransformView extends View
     if @hasParent()
       @detach()
     else
-      atom.workspaceView.append(this)
+      # TODO this doesnt work yet
+      atom.views.getView(atom.workspace).appendChild(this)
