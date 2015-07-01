@@ -6,11 +6,11 @@ transformations = require './transformations-map'
 transform = (command) ->
   
   # make sure there is an active editor
-  editor = atom.workspace.activePaneItem
+  editor = atom.workspace.getActiveTextEditor()
   return unless editor
   
   # make sure there is at least 1 selection
-  selection = editor.getSelection() # gets the last selection
+  selection = editor.getSelectedText() # gets the last selection
   return unless selection
   
   # replace all selected text(s) with a function
@@ -30,7 +30,7 @@ module.exports =
     # - attaches functions to commands
     for own cmd of transformations
       do (cmd) ->
-        atom.workspaceView.command "transform:#{cmd}", => transform(cmd)
+        atom.commands.add "atom-text-editor", "transform:#{cmd}", => transform(cmd)
     
     # - adds menu entries - TODO: make it work
     # atom.menu.add(
