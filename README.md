@@ -55,8 +55,8 @@ Some additional built-ins:
 
 ## Open Questions
 
-I am currently thinking about these topics 
-and would appreciate input from the community: 
+I am currently thinking about these topics
+and would appreciate input from the community:
 
 - how to organize the different commands internally
 - how to organize different command (groups) wrt menus, etc?

@@ -5,27 +5,27 @@
   "author": "eins78 <1@178.is>",
   "description": "Transform (selected) text in atom editor.",
   "activationCommands": {
-      "atom-text-editor": [
-          "transform:toggle",
-          "transform:clean",
-          "transform:trim",
-          "transform:swapCase",
-          "transform:capitalize",
-          "transform:titleize",
-          "transform:camelize",
-          "transform:classify",
-          "transform:underscored",
-          "transform:dasherize",
-          "transform:humanize",
-          "transform:slugify",
-          "transform:stripTags",
-          "transform:escapeHTML",
-          "transform:unescapeHTML",
-          "transform:countCharacters",
-          "transform:encodeURI",
-          "transform:decodeURI",
-          "transform:double"
-      ]
+    "atom-text-editor": [
+      "transform:toggle",
+      "transform:clean",
+      "transform:trim",
+      "transform:swapCase",
+      "transform:capitalize",
+      "transform:titleize",
+      "transform:camelize",
+      "transform:classify",
+      "transform:underscored",
+      "transform:dasherize",
+      "transform:humanize",
+      "transform:slugify",
+      "transform:stripTags",
+      "transform:escapeHTML",
+      "transform:unescapeHTML",
+      "transform:countCharacters",
+      "transform:encodeURI",
+      "transform:decodeURI",
+      "transform:double"
+    ]
   },
   "repository": "https://github.com/eins78/atom-transform",
   "license": "MIT",
@@ -35,5 +35,8 @@
   "dependencies": {
     "URIjs": "~1.13.1",
     "underscore.string": "~2.3.3"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.10.1"
   }
 }

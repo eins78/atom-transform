@@ -4,42 +4,43 @@ transformations = require './transformations-map'
 # a function to apply a string transformation function
 # to all current selections in atom
 transform = (command) ->
-  
+
   # make sure there is an active editor
   editor = atom.workspace.getActiveTextEditor()
   return unless editor
-  
+
   # make sure there is at least 1 selection
   selection = editor.getSelectedText() # gets the last selection
   return unless selection
-  
+
   # replace all selected text(s) with a function
   # TODO: does this use an "internal API"?
   #       method is not documented, but used for Edit > Text > Uppercase etc.
-  editor.replaceSelectedText 
+  editor.replaceSelectedText
     selectWordIfEmpty: true,
     (text) ->
       do transformations[command].bind(text) if transformations[command]
 
 # export module
-module.exports = 
+module.exports =
 
   # this is run on (lazy) activation
   activate: ->
-    
+
     # - attaches functions to commands
     for own cmd of transformations
       do (cmd) ->
-        atom.commands.add "atom-text-editor", "transform:#{cmd}", => transform(cmd)
-    
+        atom.commands.add "atom-text-editor", "transform:#{cmd}", ->
+          transform(cmd)
+
     # - adds menu entries - TODO: make it work
     # atom.menu.add(
     #   label: 'Packages'
-    #   submenu: [  
+    #   submenu: [
     #     label: 'Transform'
     #     submenu: for own transformation of transformations
     #       do (transformation) ->
-    #         entry = 
+    #         entry =
     #           label: transformation
     #           command: transformation
     #         console.log entry

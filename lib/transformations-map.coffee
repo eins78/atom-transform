@@ -2,9 +2,10 @@ uString = require 'underscore.string'
 URI = require "URIjs"
 
 # maps command names to actual function used
-module.exports = 
-  
-  # these are all from [`underscore.string`](https://github.com/epeli/underscore.string)
+module.exports =
+
+  # these are all from
+  # [`underscore.string`](https://github.com/epeli/underscore.string)
   'clean': ->
     uString.clean(this)
   'trim': ->
@@ -33,13 +34,13 @@ module.exports =
     uString.escapeHTML(this)
   'unescapeHTML': ->
     uString.unescapeHTML(this)
-    
+
   # some from [`URIjs`](https://github.com/medialize/URI.js)
   'encodeURI': ->
     URI.encode(this)
   'decodeURI': ->
     URI.decode(this)
-    
+
   # and some home-made
   'double': ->
     this+this
