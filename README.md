@@ -30,7 +30,7 @@ are included as commands:
 - **titleize**: `lorem ipsum` => `Lorem Ipsum`
 - **camelize**: `lorem ipsum factory_bean` => `loremIpsumFactoryBean`
 - **underscored**: `Lorem Ipsum` => `lorem_ipsum`
-- **dasherize**: `Lorem Ipsum` => `Lorem Ipsum`
+- **dasherize**: `Lorem Ipsum` => `Lorem-Ipsum`
 - **humanize**: `loremIpsum_FactoryBean` => `Lorem ipsum factory bean`
 - **classify**: `Lor.em Ip sum` => `LorEmIpSum`
 - **slugify**: `Lo!rem/ Ip = sum` => `lorem-ip-sum`
